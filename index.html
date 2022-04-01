@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRELLO</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <span class="header-colonne" id="header-colonne"> + Colonne</span>
+            <span class="header-notes" id="header-notes"> + Notes</span>
+        </div>  
+        <div class="header2">
+            <i class='bx bxs-trash' id="bxs-trash" ></i>
+            <i class='bx bx-download'></i>
+        </div>
+
+    </div>
+    <div class="container" id="container">
+       
+        
+            
+           
+    </div>
+    <div class="modals-totale" id="modals-totale">
+        <div class="modal" id="modal">
+
+            <div class="header-modal" id="header-modal">
+                <span>NOUVELLE TACHE</span>
+                <i id="iconecolonne">&times;</i>
+            </div>
+            <div class="container-modal" id="container-modal">
+                <div class="container-content">
+
+                    <div class="div1">
+                        <span>Remplir les informations de la nouvelle tache</span>
+                    </div>  
+
+                    <div class="div2">
+                        <label>Tache</label>
+                        <textarea  type="text" id="mestaches" rows="20" cols="20"></textarea>
+                    </div>  
+
+                    <div class="div3">
+                        <label>Date</label>
+                        <input type="date" placeholder="jj/mm/aaaa" id="mesdates">
+                    </div>
+
+                    <div class="div4">
+                        <label>heure de Debut</label>
+                        <input type="time" id="myfisttime">
+                    </div>  
+
+                    <div class="div5">
+                        <label>heure de Fin</label>
+                        <input type="time" id="mysecondetime">
+                    </div>
+
+                    <div class="div6">
+                    <button type="button" id="btn">Ajoujer</button>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+    </div>
+    <div class="container-corbeille" id="container-corbeille">
+        <div class="corbeille" id="corbeille">
+            <h1>Wastepaper</h1>
+            
+        </div>
+    </div>
+    <div class="contenair-sup" id="contenair-sup">
+        <div class="message-alert" id="message-alert">
+            <img src="OIP.jpeg">
+            <p>voulez-vous vraiment suprimer</p>
+            <div class="ouinon">
+                <h2 class="h1" id="h1">oui</h2>
+                <h2 class="h2" id="h2">non</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
